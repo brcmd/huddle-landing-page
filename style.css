@@ -1,0 +1,95 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 30px 0 0 50px;
+}
+
+main {
+    align-items: center;
+    display: grid;
+    grid-template-areas: "img-cover img-cover intro intro"
+        ". . . icons";
+    padding: 50px 50px 20px 50px;
+}
+
+aside {
+    grid-area: icons;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    border-radius: 55px;
+    box-shadow: 1px 1px 1px 1px #5a5a5a;
+    color: hsl(257, 40%, 49%);
+    font-size: 1em;
+    height: 40px;
+    margin-top: 20px;
+    width: 30%;
+}
+
+footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+#illustration-mockups {
+    flex-basis: 60%;
+    grid-area: img-cover;
+    padding-right: 30px;
+}
+
+#intro-text {
+    flex-basis: 40%;
+    grid-area: intro;
+    padding-left: 30px;
+}
+
+.cover-image {
+    width: 100%;
+}
+
+.fa-facebook {
+    margin-right: 10px;
+}
+
+.fa-twitter {
+    margin-right: 10px;
+}
+
+.attribution {
+    font-size: 13px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 64%);
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #intro-text {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #illustration-mockups {
+        padding-right: 0;
+    }
+
+    aside {
+        margin-top: 50px;
+    }
+
+}
